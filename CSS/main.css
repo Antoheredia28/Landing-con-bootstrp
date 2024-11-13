@@ -52,10 +52,30 @@ body {
 
 
 
+#bg-contacto {
+    position: relative;
+    top:-130px;
+}
+#seccion-contacto {
+    background-color: #1b2a4e;
+    min-height: 500px;
+    position: relative;
+}
 
 
+#contenedor-fomulario {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius: 5px;
+    max-width: 500px;
+}
 
-
+#titulo-fomulario {
+    color: #3f3f3f;
+}
 
 
 
@@ -67,14 +87,21 @@ body {
 
 
 @media (max-width:768px) {
-    #intro {
+    #intro, #equipo {
         width: 90% !important;
+    }
+    #equipo p {
+        display: none;
     }
     .aprendizaje-fila {
         width: 100% !important;
         text-align: center;
     }
 }
+#bg-contacto {
+    top:-110px;
+}
+
 
 
 /*=========================MEDIA QUERIES PANTALLAS EXTRA-SM =============================*/
