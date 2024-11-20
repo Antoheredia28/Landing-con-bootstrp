@@ -1,3 +1,5 @@
+/*===============Propiedades Globales================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
@@ -5,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-
+/*===================MENU==========================*/
 
 #menu li > a {
     font-size: 15px;
@@ -18,6 +20,13 @@ body {
     font-size: 15px;
     font-weight: bold;
 }
+/*===================SLIDER DE IMAGENES==========================*/
+
+
+
+
+
+/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
 
 
 
@@ -38,24 +47,13 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*=========================CONTACTOS BACKGROUND================================*/
 
 #bg-contacto {
     position: relative;
     top:-130px;
 }
+
 #seccion-contacto {
     background-color: #1b2a4e;
     min-height: 500px;
@@ -63,6 +61,7 @@ body {
 }
 
 
+/*=========================CONTACTOS FORMULARIO================================*/
 #contenedor-fomulario {
     position: absolute;
     top: 30%;
@@ -70,7 +69,7 @@ body {
     transform: translate(-50%, -50%);
     background: #fbfafa;
     border-radius: 5px;
-    max-width: 500px;
+    
 }
 
 #titulo-fomulario {
@@ -78,18 +77,20 @@ body {
 }
 
 
+/*=========================FOOTER================================*/
 
 
 
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
 
 
 
-
-
-@media (max-width:768px) {
+@media (max-width:1200px) {
     #intro, #equipo {
         width: 90% !important;
+        margin: auto;
     }
+
     #equipo p {
         display: none;
     }
@@ -97,14 +98,17 @@ body {
         width: 100% !important;
         text-align: center;
     }
+
+    /*=========================MEDIA QUERIES PANTALLA SM================================*/
 }
+
 #bg-contacto {
-    top:-110px;
+    top:-120px;
 }
 
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
 
-/*=========================MEDIA QUERIES PANTALLAS EXTRA-SM =============================*/
 
 @media (max-width: 576px) {
     .icono-wrap{
