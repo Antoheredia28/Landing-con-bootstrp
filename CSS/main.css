@@ -69,12 +69,20 @@ body {
     transform: translate(-50%, -50%);
     background: #fbfafa;
     border-radius: 5px;
-    
 }
 
 #titulo-fomulario {
     color: #3f3f3f;
 }
+
+/* Estilo para imágenes pequeñas en el formulario */
+.img-pequena {
+    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+    width: 100%; /* Asegura que sea responsiva */
+    height: auto; /* Mantiene la proporción original */
+}
+
+
 
 
 /*=========================FOOTER================================*/
