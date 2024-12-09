@@ -5,6 +5,8 @@
 body {
     font-family: 'Dancing' serif;
     overflow-x: hidden;
+    margin: 0; /* Asegúrate de que no haya márgenes globales */
+    padding: 0; /* Asegúrate de que no haya padding global */
 }
 
 /*===================MENU==========================*/
@@ -13,103 +15,108 @@ body {
     font-size: 15px;
     font-weight: bolder;
     color: #3f3f3f;
-
 }
 
 #menu form > button {
     font-size: 15px;
     font-weight: bold;
 }
+
 /*===================SLIDER DE IMAGENES==========================*/
 
-
-
-
+/* Agrega estilos específicos aquí si es necesario */
 
 /*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Agrega estilos específicos aquí si es necesario */
 
 /*=========================CONTACTOS BACKGROUND================================*/
 
 #bg-contacto {
     position: relative;
-    top:-130px;
+    top: -130px;
 }
 
 #seccion-contacto {
-    background-color: #1b2a4e;
+    background-color: #1b2a4e; /* Fondo consistente */
     min-height: 500px;
     position: relative;
 }
 
-
 /*=========================CONTACTOS FORMULARIO================================*/
-#contenedor-fomulario {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fbfafa;
-    border-radius: 5px;
+
+#contenedor-formulario {
+    position: relative; /* Ajuste relativo en lugar de absoluto para evitar solapamientos */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px;
+    max-width: 600px; /* Ancho máximo para el formulario */
+    background: #fbfafa; /* Fondo del formulario */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega un pequeño efecto de sombra */
+    margin-bottom: 0; /* Elimina margen inferior */
 }
 
-#titulo-fomulario {
+#titulo-formulario {
     color: #3f3f3f;
+    text-align: center;
 }
 
-/* Estilo para imágenes pequeñas en el formulario */
 .img-pequena {
-    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
-    width: 100%; /* Asegura que sea responsiva */
-    height: auto; /* Mantiene la proporción original */
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    width: 100%; /* Ajuste responsivo */
+    height: auto; /* Mantiene proporciones */
+    margin-bottom: 15px; /* Espaciado inferior para armonía */
 }
 
+/* Ajuste de los inputs del formulario */
+#contenedor-formulario .form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
 
+/* Botón del formulario */
+#contenedor-formulario .btn {
+    background-color: #1b2a4e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
+#contenedor-formulario .btn:hover {
+    background-color: #143965;
+}
 
 /*=========================FOOTER================================*/
 
 footer {
     background: #1b2a4e;
     min-height: 100px;
+    margin-top: 0; /* Elimina márgenes superiores */
+    padding: 20px 0; /* Ajusta el espaciado */
+    text-align: center;
 }
 
 footer p {
     color: #f3f3f3;
-    text-align: center;
 }
 
 #iconos i {
     font-size: 26px;
-    padding:  0 8px;
+    padding: 0 8px;
     color: #f3f3f3;
+    transition: color 0.3s ease;
 }
 
-
+#iconos i:hover {
+    color: #ccc;
+}
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
 
-
-
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
     #intro, #equipo {
         width: 90% !important;
         margin: auto;
@@ -122,20 +129,12 @@ footer p {
         width: 100% !important;
         text-align: center;
     }
-
-    /*=========================MEDIA QUERIES PANTALLA SM================================*/
-}
-
-#bg-contacto {
-    top:-120px;
 }
 
 /*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
 
-
-
 @media (max-width: 576px) {
-    .icono-wrap{
+    .icono-wrap {
         flex-wrap: wrap;
         justify-content: center !important;
     }
